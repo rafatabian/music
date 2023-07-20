@@ -1,0 +1,197 @@
+.navbar_container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:400px;
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    transition: 0.4s;
+    z-index: 10;
+}
+.navbar_container_right{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:90px;
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    transition: 0.7s;
+    z-index: 10;
+}
+.navbar_first_child{
+    flex: 1;
+    width: 380px;
+    margin: 10px 0;
+    padding:15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.8s;
+}
+
+.navbar_first_child a{
+    padding:7px 10px;
+    font-family: var(--var-serif);
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+}
+ .home_icons{
+    font-size: 25px;
+    margin-right: 10px;
+}
+ .home_icon_m{
+    margin: 0;
+    font-size: 25px;
+}
+
+ .search_icons{
+    font-size: 22px;
+    margin-right: 10px;
+}
+ .search_icons_m{
+    font-size: 22px;
+    margin:0;
+}
+ .search_icon_fill{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+.search_icon_fill_m{
+    width: 22px;
+    height: 22px;
+    margin:0;
+}
+ .search_icons_m{
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}
+.navbar_second_child{
+    flex: 3;
+    width: 380px;
+    margin: 10px 0 ;
+    padding:15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 1s;
+}
+.navbar_second_child_buttons{
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+}
+.navbar_second_child_buttons p{
+    margin:10px 0 ;
+    padding:5px 10px;
+    font-size: 16px;
+    font-family: var(--var-serif);
+    background-color:rgb(78, 78, 78);
+    border-radius: 15px;
+}
+.navbar_second_child_buttons svg{
+    color: rgb(234, 234, 234);
+}
+.arrows_icons{
+    font-size: 22px;
+    margin:7px 10px;
+    cursor: pointer;
+}
+.arrow_right_icon{
+    margin-left: 28px;
+}
+.navbar_second_child_playlists{
+    width:95%;
+}
+.navbar_second_child_playlists_s{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+@media  screen and (min-width:2560px) {
+    .navbar_first_child a{
+        margin: 10px 0 ;
+        font-size: 23px;
+   }
+   .home_icons, .home_icon_m{
+     width: 35px;
+     height: 35px;
+   }
+   .search_icons,  .search_icon_fill,  .search_icon_fill_m, .search_icons_m{
+    width: 33px;
+    height: 33px;
+  }
+   .arrow_right_icon, .arrows_icons{
+    width: 33px;
+    height: 33px;
+    margin: 28.5px;
+   }
+   
+   .navbar_second_child_buttons p{
+    width:90px;
+    text-align: center;
+   }
+}
+@media screen and (min-width:1680px){
+    .navbar_first_child a{
+         margin: 5px 0 ;
+    }
+}
+
+@media  screen and (max-width:910px) {
+    .arrow_right_icon{
+        display: none;
+    }
+}
+@media  screen and (max-width:525px) {
+    .navbar_container_right{
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .navbar_first_child, .navbar_second_child{
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 3px;
+        padding: 0;
+        }
+    .navbar_second_child_playlists_s{
+        height: 70px;
+        flex-direction: row;
+    }
+    .navbar_second_child_buttons{
+        display: none;
+    }
+    .navbar_second_child_buttons p{
+        width: 100%;
+        font-size: 13px;
+        padding: 3px 6px;
+    }
+}
+
+
